@@ -120,3 +120,41 @@ body {
 .whatsapp-float:hover {
   background: #1ebe5d;
 }
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .menu-img {
+    width: 90%;
+  }
+
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .about, .menu, .contact {
+    padding: 40px 15px;
+  }
+
+  .hero p, .info {
+    font-size: 14px;
+  }
+
+  .whatsapp-btn {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 80%;
+  }
+
+}
