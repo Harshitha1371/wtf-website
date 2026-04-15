@@ -1,193 +1,109 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
 body {
-  background: #0f0f0f;
-  color: white;
-}
-
-/* GLOBAL SPACING */
-section {
-  padding: 80px 20px;
-}
-
-h1, h2 {
-  margin-bottom: 15px;
-}
-
-h2 {
-  font-size: 2rem;
-  color: #ffcc00;
-}
-
-p {
-  margin-bottom: 10px;
-  color: #ccc;
-  line-height: 1.6;
-}
-
-/* NAVBAR */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 25px;
-  background: #000;
-  position: sticky;
-  top: 0;
-}
-
-.navbar a {
-  margin-left: 20px;
-  color: #ffcc00;
-  text-decoration: none;
-}
-
-/* HEADER */
-header {
-  text-align: center;
-  padding: 25px;
-  background: #111;
-}
-
-.logo {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  border-radius: 50%;
-  background: white;
-  padding: 5px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #222;
 }
 
 /* HERO */
 .hero {
-  height: 90vh;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
-              url('Pictures/wtf.jpeg') center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  padding: 60px 20px;
+  background: #ff3c3c;
+  color: white;
 }
 
-.hero-content {
-  animation: fadeUp 1s ease;
+.logo {
+  width: 220px;
+  margin-bottom: 20px;
+  border-radius: 12px;
 }
 
-.hero h2 {
-  font-size: 3rem;
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 
-.hero p {
-  margin: 10px 0 20px;
+.tagline {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ffe082;
+}
+
+.info {
+  line-height: 1.8;
+  margin-bottom: 25px;
 }
 
 /* BUTTONS */
-.buttons {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
-
-.btn {
-  padding: 12px 20px;
+.whatsapp-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #25D366;
+  color: white;
   border-radius: 8px;
   text-decoration: none;
-  color: white;
-  background: #333;
+  font-weight: bold;
   transition: 0.3s;
 }
 
-.btn:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 10px #ff3c3c;
+.whatsapp-btn:hover {
+  background: #1ebe5d;
 }
 
-.primary {
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
   background: #ff3c3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
 }
 
-.primary:hover {
-  background: #ff0000;
-  box-shadow: 0 0 12px #ff3c3c;
+/* ABOUT */
+.about {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff3cd;
 }
 
-/* CARD */
-.card {
-  background: #1a1a1a;
-  padding: 30px;
-  border-radius: 12px;
-  max-width: 500px;
-  margin: auto;
-  box-shadow: 0 0 15px rgba(255,0,0,0.2);
+.about h2 {
+  margin-bottom: 20px;
 }
 
 /* MENU */
-.menu-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 30px;
+.menu {
+  text-align: center;
+  padding: 50px 20px;
 }
 
 .menu-img {
   width: 300px;
   border-radius: 12px;
-}
-
-.menu-info p {
-  margin: 12px 0;
-  font-size: 17px;
-}
-
-.highlight {
-  color: #ffcc00;
-  font-weight: bold;
-}
-
-/* REVIEWS */
-.review-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.review {
-  background: #1a1a1a;
-  padding: 25px;
-  border-radius: 12px;
-  min-width: 200px;
-  box-shadow: 0 0 10px rgba(255,0,0,0.2);
-  transition: 0.3s;
-}
-
-.review:hover {
-  transform: translateY(-5px);
-}
-
-/* INSTAGRAM */
-.instagram {
-  text-align: center;
-}
-
-.insta-box {
-  display: flex;
-  justify-content: center;
   margin: 20px 0;
+}
+
+.menu-note {
+  color: #555;
 }
 
 /* CONTACT */
 .contact {
   text-align: center;
+  padding: 50px 20px;
+  background: #f5f5f5;
 }
 
-/* FLOAT BUTTON */
+.insta {
+  display: block;
+  margin-top: 15px;
+  color: #e1306c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FLOATING WHATSAPP */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -195,32 +111,12 @@ header {
   background: #25D366;
   color: white;
   font-size: 22px;
-  padding: 14px;
+  padding: 15px;
   border-radius: 50%;
   text-decoration: none;
-  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .whatsapp-float:hover {
-  transform: scale(1.1);
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #000;
-  color: #aaa;
-}
-
-/* ANIMATION */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  background: #1ebe5d;
 }
